@@ -16,8 +16,8 @@ public class HelloAppWidget extends AppWidgetProvider {
                                 int appWidgetId) {
 
         CharSequence widgetText =
-                context.getString(R.string.tag_inc) + countAutoIncrement
-                + " " + context.getString(R.string.tag_click) + countClick;
+                context.getString(R.string.tag_click) + countClick
+                        + " " + context.getString(R.string.tag_inc) + countAutoIncrement;
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.count_btn);
         views.setTextViewText(R.id.txt_countview, widgetText);

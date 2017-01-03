@@ -3,14 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5pt"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#80000000">
 
     <TextView
         android:id="@+id/txt_countview"
-        android:text="カウント数を表示"
+        android:text="カウンター"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size" />
 
     <LinearLayout
         android:layout_width="match_parent"
